@@ -1,0 +1,50 @@
+{
+  "name": "portfolio",
+  "version": "0.0.1",
+  "description": "This is my gatsby-strapi portfolio",
+  "author": "Lucio Afonso <lucioafonso@icloud.com>",
+  "license": "SEE LICENSE IN LICENSE",
+  "main": "n/a",
+  "private": true,
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 0"
+  },
+  "dependencies": {
+    "gatsby": "^2.29.3",
+    "gatsby-image": "^2.8.0",
+    "gatsby-plugin-manifest": "^2.9.1",
+    "gatsby-plugin-offline": "^3.7.1",
+    "gatsby-plugin-react-helmet": "^3.7.0",
+    "gatsby-plugin-sharp": "^2.11.2",
+    "gatsby-plugin-sitemap": "^2.9.0",
+    "gatsby-plugin-webfonts": "^1.1.3",
+    "gatsby-source-filesystem": "^2.8.1",
+    "gatsby-source-strapi": "^0.0.12",
+    "gatsby-transformer-sharp": "^2.9.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "react-helmet": "^6.1.0",
+    "react-icons": "^4.1.0",
+    "react-markdown": "^5.0.3"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "prettier": "2.2.1"
+  },
+  "engines": {
+    "node": "~15.5.0",
+    "npm": "~7.3.0"
+  },
+  "keywords": [
+    "gatsby",
+    "strapi",
+    "portfolio"
+  ]
+}

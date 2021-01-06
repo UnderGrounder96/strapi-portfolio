@@ -1,0 +1,20 @@
+import React from "react"
+import ReactMarkdown from "react-markdown"
+import { graphql, Link } from "gatsby"
+
+import Layout from "../components/layout"
+
+const ComponentName = () => {
+  return <h2>blog post template</h2>
+}
+
+// export const query = graphql`
+//   query GetSingleBlog($slug: String) {
+//     blog: strapiBlogs(slug: { eq: $slug }) {
+//       content
+
+//     }
+//   }
+// `
+
+export default ComponentName
