@@ -8,16 +8,44 @@ import Jobs from "../components/jobs"
 import Projects from "../components/projects"
 import Blogs from "../components/blogs"
 
-// ...GatsbyImageSharpFluid
-
-const IndexPage = () => {
+const IndexPage = ({
+  data: {
+    strapi: { projs },
+  },
+}) => {
   return (
     <Layout page="Home">
       <Hero />
       <Services />
       <Jobs />
+      <Projects projects={projs} title="featured projects" showLink />
     </Layout>
   )
 }
+export const query = graphql`
+  {
+    strapi: allStrapiProjects(filter: { featured: { eq: true } }) {
+      projs: nodes {
+        title
+        desc
+        featured
+        url
+        git_url
+        id
+        image {
+          img: childrenImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        stack {
+          id
+          name
+        }
+      }
+    }
+  }
+`
 
 export default IndexPage

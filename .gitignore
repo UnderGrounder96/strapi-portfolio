@@ -71,3 +71,4 @@ yarn-error.log
 
 # Custom
 app
+strapi-config.json
