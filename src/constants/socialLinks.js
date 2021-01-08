@@ -40,7 +40,12 @@ export default ({ styleClass }) => {
     <ul className={`social-links ${styleClass ? styleClass : ""}`}>
       {data.map(link => (
         <li key={link.id}>
-          <a href={link.url} className="social-link" target="_blank">
+          <a
+            href={link.url}
+            className="social-link"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
             {link.icon}
           </a>
         </li>
