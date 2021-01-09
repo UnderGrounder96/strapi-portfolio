@@ -20,7 +20,7 @@ const IndexPage = ({
       <Services />
       <Jobs />
       <Projects projects={projs} title="featured projects" showLink />
-      <Blogs blogs={blogs} title="blogs" showLink />
+      <Blogs blogs={blogs} title="latest articles" showLink />
     </Layout>
   )
 }
