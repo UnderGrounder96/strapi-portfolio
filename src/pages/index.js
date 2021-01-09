@@ -10,7 +10,8 @@ import Blogs from "../components/blogs"
 
 const IndexPage = ({
   data: {
-    strapi: { projs },
+    strapiProjs: { projs },
+    strapiBlogs: { blogs },
   },
 }) => {
   return (
@@ -19,12 +20,13 @@ const IndexPage = ({
       <Services />
       <Jobs />
       <Projects projects={projs} title="featured projects" showLink />
+      <Blogs blogs={blogs} title="blogs" showLink />
     </Layout>
   )
 }
 export const query = graphql`
   {
-    strapi: allStrapiProjects(filter: { featured: { eq: true } }) {
+    strapiProjs: allStrapiProjects(filter: { featured: { eq: true } }) {
       projs: nodes {
         title
         desc
@@ -42,6 +44,23 @@ export const query = graphql`
         stack {
           id
           name
+        }
+      }
+    }
+    strapiBlogs: allStrapiBlogs(sort: { fields: date, order: DESC }, limit: 3) {
+      blogs: nodes {
+        slug
+        title
+        id
+        desc
+        date(formatString: "Do MMM, YYYY")
+        category
+        image {
+          img: childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
         }
       }
     }
