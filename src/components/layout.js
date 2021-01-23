@@ -10,7 +10,6 @@ import { graphql, useStaticQuery } from "gatsby"
 
 import SEO from "./seo"
 import Header from "./header"
-import Navbar from "./navbar"
 import Sidebar from "./sidebar"
 import Footer from "./footer"
 
@@ -37,8 +36,9 @@ const Layout = ({ children, page }) => {
         title={site.meta.title}
         page={page}
       />
-      <Navbar />
+      <Header />
       {children}
+      <Footer author={site.meta.author} />
     </>
   )
 }

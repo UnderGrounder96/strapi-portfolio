@@ -9,7 +9,7 @@ const Project = ({ desc, title, git_url, url, stack, image, index }) => {
       {image && <Image fluid={image.img[0].fluid} className="project-img" />}
 
       <div className="project-info">
-        <span className="project-number">0{index + 1}.</span>
+        <span className="project-number">#{index + 1}</span>
         <h3>{title}</h3>
         <p className="project-desc">{desc}</p>
         <div className="project-stack">
