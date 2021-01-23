@@ -16,6 +16,10 @@ import Footer from "./footer"
 // import "../css/layout.css"
 
 const Layout = ({ children, page }) => {
+  const [showSidebar, setShowSidebar] = React.useState(false)
+  const toggleSidebar = () => {
+    setShowSidebar(!showSidebar)
+  }
   const { site } = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -36,7 +40,8 @@ const Layout = ({ children, page }) => {
         title={site.meta.title}
         page={page}
       />
-      <Header />
+      <Header toggleSidebar={toggleSidebar} />
+      <Sidebar showSidebar={showSidebar} toggleSidebar={toggleSidebar} />
       {children}
       <Footer author={site.meta.author} />
     </>

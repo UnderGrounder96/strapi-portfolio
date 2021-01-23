@@ -5,7 +5,7 @@ import { Link } from "gatsby"
 import logo from "../assets/logo.svg"
 import PageLinks from "../constants/links"
 
-const Header = () => {
+const Header = ({ toggleSidebar }) => {
   return (
     <header>
       <nav className="navbar">
@@ -15,7 +15,11 @@ const Header = () => {
               <img src={logo} loading="lazy" alt="logo" />
             </Link>
 
-            <button type="button" className="toggle-btn">
+            <button
+              type="button"
+              className="toggle-btn"
+              onClick={toggleSidebar}
+            >
               <FaAlignRight />
             </button>
           </div>
