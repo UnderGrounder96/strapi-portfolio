@@ -12,7 +12,7 @@ export default ({ styleClass }) => {
     {
       id: 1,
       icon: <FaInstagram className="social-icon" />,
-      url: "https://bit.ly/2BMGpAn",
+      url: "https://instagram.com/undergrounder96",
     },
     {
       id: 2,
@@ -22,17 +22,17 @@ export default ({ styleClass }) => {
     {
       id: 3,
       icon: <FaGithubSquare className="social-icon" />,
-      url: "https://bit.ly/2LRZ0wn",
+      url: "https://github.com/undergrounder96",
     },
     {
       id: 4,
       icon: <FaTwitterSquare className="social-icon" />,
-      url: "https://bit.ly/2XnFQ6V",
+      url: "https://twitter.com/undergrounder96",
     },
     {
       id: 5,
       icon: <FaTwitch className="social-icon" />,
-      url: "https://bit.ly/2KYhZsd",
+      url: "https://twitch.tv/undergrounder96/",
     },
   ]
 
