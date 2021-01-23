@@ -39,6 +39,7 @@ const Layout = ({ children, page }) => {
       />
       <Navbar />
       {children}
+      <Footer author={site.meta.author} />
     </>
   )
 }

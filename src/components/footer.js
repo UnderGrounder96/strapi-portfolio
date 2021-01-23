@@ -2,15 +2,26 @@ import React from "react"
 
 import SocialLinks from "../constants/socialLinks"
 
-const Footer = () => {
+const Footer = ({ author }) => {
   return (
-    <h2>
-      {" "}
-      &copy; {new Date().getFullYear()}. AUTHOR - <strong>Portfolio</strong>.
-      All rights reserved. Built with
-      {` `}
-      <a href="https://gatsbyjs.com">Gatsby</a>
-    </h2>
+    <footer className="footer">
+      <div>
+        <SocialLinks styleClass="footer-links" />
+        <h4>
+          &copy; {new Date().getFullYear()}. <strong>{author}</strong>{" "}
+          <span>WebDev</span>.
+        </h4>
+        <p>
+          All rights reserved. Built with{" "}
+          <a href="https://gatsbyjs.com">
+            <span style={{ color: "white", textDecoration: "underline" }}>
+              GatsbyJS
+            </span>
+          </a>
+          .
+        </p>
+      </div>
+    </footer>
   )
 }
 
