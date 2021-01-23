@@ -11,8 +11,8 @@ const Sidebar = ({ showSidebar, toggleSidebar }) => {
         <FaTimes />
       </button>
       <div className="side-container">
-        <Links styleClass="sidebar-links" />
-        <SocialLinks styleClass="sidebar-icons" />
+        <Links styleClass={`${showSidebar ? "sidebar-links" : ""}`} />
+        <SocialLinks styleClass={`${showSidebar ? "sidebar-icons" : ""}`} />
       </div>
     </aside>
   )
