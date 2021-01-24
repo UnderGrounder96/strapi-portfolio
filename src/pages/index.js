@@ -24,6 +24,7 @@ const IndexPage = ({
     </Layout>
   )
 }
+
 export const query = graphql`
   {
     strapiProjs: allStrapiProjects(filter: { featured: { eq: true } }) {

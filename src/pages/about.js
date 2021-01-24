@@ -12,7 +12,7 @@ const AboutPage = ({
 }) => {
   const { title, stack, image, info } = about[0]
   return (
-    <Layout>
+    <Layout page={title}>
       <section className="about-page">
         <div className="section-center about-center">
           {image && <Image fluid={image.img.fluid} className="about-img" />}
