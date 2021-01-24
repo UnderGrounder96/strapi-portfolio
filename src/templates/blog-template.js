@@ -4,6 +4,7 @@ import { graphql, Link } from "gatsby"
 import Image from "gatsby-image"
 
 import Layout from "../components/layout"
+import Title from "../components/title"
 
 const BlogTemplate = ({
   data: {
@@ -15,7 +16,7 @@ const BlogTemplate = ({
       <section className="blog-template">
         <div className="section-center">
           <article className="blog-content">
-            <h2>{title}</h2>
+            <Title title={title} />
             {/* TODO: Find a way to focus an image's content  */}
             {image && <Image fluid={image.img.fluid} className="blog-img" />}
             <ReactMarkdown source={content} />

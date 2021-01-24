@@ -20,7 +20,7 @@ export default ({ styleClass }) => {
     },
     {
       id: 4,
-      text: "blog",
+      text: "blogs",
       url: "/blog/",
     },
     {
