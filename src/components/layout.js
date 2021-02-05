@@ -13,7 +13,7 @@ import Header from "./header"
 import Sidebar from "./sidebar"
 import Footer from "./footer"
 
-// import "../css/layout.css"
+import "../css/layout.css"
 
 const Layout = ({ children, page }) => {
   const [showSidebar, setShowSidebar] = React.useState(false)
