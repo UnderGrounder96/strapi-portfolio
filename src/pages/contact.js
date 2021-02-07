@@ -8,12 +8,12 @@ const ContactPage = () => {
       <section className="contact-page">
         <article className="contact-form">
           <h3>Get in touch</h3>
-          <form method="post" rel="noreferrer noopener" target="_blank">
+          <form name="contact" method="post" netlify>
             <div className="form-group">
               <input
                 type="text"
                 name="name"
-                placeholder="name"
+                placeholder="your name"
                 className="form-control"
                 required
               />
@@ -26,7 +26,6 @@ const ContactPage = () => {
               />
               <textarea
                 name="message"
-                name="message"
                 rows="7"
                 placeholder="your message goes here"
                 className="form-control"
@@ -34,7 +33,7 @@ const ContactPage = () => {
               ></textarea>
             </div>
             <button type="submit" className="submit-btn btn">
-              Submit
+              Send
             </button>
           </form>
         </article>
