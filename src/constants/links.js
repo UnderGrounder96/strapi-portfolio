@@ -20,11 +20,6 @@ export default ({ styleClass }) => {
     },
     {
       id: 4,
-      text: "blogs",
-      url: "/blog/",
-    },
-    {
-      id: 5,
       text: "contact",
       url: "/contact/",
     },
