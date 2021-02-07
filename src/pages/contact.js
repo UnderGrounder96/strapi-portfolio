@@ -8,8 +8,9 @@ const ContactPage = () => {
       <section className="contact-page">
         <article className="contact-form">
           <h3>Get in touch</h3>
-          <form name="contact" method="post" netlify>
+          <form name="contact" method="post" data-netlify="true">
             <div className="form-group">
+              <input type="hidden" name="form-name" value="contact" />
               <input
                 type="text"
                 name="name"
@@ -26,13 +27,13 @@ const ContactPage = () => {
               />
               <textarea
                 name="message"
-                rows="7"
+                rows="8"
                 placeholder="your message goes here"
                 className="form-control"
                 required
               ></textarea>
             </div>
-            <button type="submit" className="submit-btn btn">
+            <button type="submit" name="submit" className="submit-btn btn">
               Send
             </button>
           </form>
