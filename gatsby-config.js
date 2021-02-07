@@ -9,13 +9,15 @@ module.exports = {
     title: `WebDev Portfolio`,
     description: `This WebDev Portfolio Site that uses Strapi and GatsbyJS.`,
     author: `Lucio Afonso`,
-    twitterUsername: `@UnderGrounder96`,
-    image: `/twitter-card.png`,
     siteUrl: "https://lucio-afonso-portfolio.netlify.app",
     social: [
       {
         name: `linkedin`,
         url: `https://bit.ly/2AV9b0N`,
+      },
+      {
+        name: `twitter`,
+        url: `https://twitter.com/UnderGrounder96`,
       },
       {
         name: `github`,
@@ -54,7 +56,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `static/favicon.ico`, // This path is relative to the root of the site.
+        icon: `static/logo.png`, // This path is relative to the root of the site.
       },
     },
     {
