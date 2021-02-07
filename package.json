@@ -1,11 +1,13 @@
 {
   "name": "portfolio",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "This is my gatsby-strapi portfolio",
   "author": "Lucio Afonso <lucioafonso@icloud.com>",
   "license": "SEE LICENSE IN LICENSE",
   "main": "n/a",
   "private": true,
+  "homepage": "https://lucio-afonso-portfolio.netlify.app",
+  "repository": "github:UnderGrounder96/strapi-portfolio",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
